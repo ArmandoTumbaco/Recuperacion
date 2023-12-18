@@ -1,0 +1,26 @@
+
+<h2>Lista de Software</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Code</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Detail</th>
+      <th>Requirements</th>
+      <th>Version</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let software of softwareList">
+      <td>{{ software.id }}</td>
+      <td>{{ software.code }}</td>
+      <td>{{ software.name }}</td>
+      <td>{{ software.price }}</td>
+      <td>{{ software.detail }}</td>
+      <td>{{ software.requirements }}</td>
+      <td>{{ software.version }}</td>
+    </tr>
+  </tbody>
+</table>
